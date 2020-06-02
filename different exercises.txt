@@ -1,0 +1,54 @@
+mark = int(input("Enter your marke: "))
+
+if mark > 85:
+    print("Distinction")
+elif mark >= 65:
+    print("Pass")
+else:
+    print("Fail")
+
+
+word1 = "good"
+word2 = "day"
+word3 ="rushab"
+
+print(word1 , word2 , word3)
+
+number1 = input("Enter whole number: ")
+number2 = input("Enter decimal number: ")
+
+integer_number = int(number1)
+float_number = float(number2)
+round_number = int(round(float_number))
+
+print(number1)
+print(number2)
+print(round_number)
+
+
+def addCalc(number1, number2):
+    answer = number1 + number2 
+    return answer
+
+addedNumber = addCalc(10,5)
+print(addedNumber + 20)
+
+
+cool_cows = ["Winnie the Moo", "Moolan", "Milkshake", "Mooana"]
+cool_sheep = ["Baaaart", "Baaaarnaby"]
+cool_pigs = ["Chris P. Bacon", "Hamlet", "Hogwarts"]
+
+cool_animals = [cool_cows, cool_sheep, cool_pigs]
+
+print(cool_animals[2][2])
+print(cool_animals[0][1])
+
+
+***challange of the day***
+
+numbers_list = []
+
+for i in range(2000, 3200):
+    if (i%7==0) and (i%5!=0):
+        numbers_list.append(i)
+        print (numbers_list)
